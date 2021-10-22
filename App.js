@@ -4,11 +4,11 @@ function App() {
     return (
         <div>
            <input type="checkbox" />
-           <span> I want a bike</span><br></br>
+           <span> placeholder text1 </span><br></br>
              <input type="checkbox" />
-             <span> I want a car</span><br></br>
+             <span> placeholder text2</span><br></br>
                <input type="checkbox" />
-               <span> I want a boat</span><br></br>
+               <span> placeholder text3</span><br></br>
            
         </div>
       )
