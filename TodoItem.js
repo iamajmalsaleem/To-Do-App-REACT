@@ -1,13 +1,21 @@
 import React from "react"
 
-const TodoItem = () => 
+let completedStyle = {
+    fontStyle : "italic",
+    color : "red" ,
+    textDecoration : "line-through"
+}
+
+const TodoItem = (props) => 
         ( <div>
               <div className = "todo-item">
                 <input type="checkbox" 
 				       checked = {props.task.completed}
                        onChange = {()=> props.handleChange(props.task.id)}
 			   />
-                <span>{props.task.text}</span>
+                <span style={props.task.completed ? completedStyle:null} >
+				  {props.task.text}
+				</span>
               </div>
             <br/> 
           </div>   
